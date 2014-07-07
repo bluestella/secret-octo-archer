@@ -23,7 +23,7 @@
 			<div  class=" form-search col-xs-12 col-sm-6 col-md-5 col-lg-1" ng-controller="SearchController as search">
 
 				<div class="form-group">
-					<input type="number" class="form-control input-lg" ng-model="search.main" placeholder="09XX">
+					<input type="number" class="form-control input-lg" ng-model="search.main" placeholder="add first 4 digits: 09XX">
 
 					<h4 class="it-is" ng-hide="!search.main"><span class="result-col" ng-repeat="pref in search.mains | filter: search.main" ng-show="search.main"> {{pref.network}} </span> yan!</h4>
 				</div>
