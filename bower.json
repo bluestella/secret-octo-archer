@@ -1,0 +1,8 @@
+{
+	"name": "PH Mobile Prefix Finder",
+	"version": "1.0",
+	"dependencies": {
+		"angular": "latest",
+		"bootstrap": "latest"
+	}
+}
