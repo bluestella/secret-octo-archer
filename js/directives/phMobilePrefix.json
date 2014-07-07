@@ -1,6 +1,6 @@
 [
    {
-      "network":"Smart / Talk n Text",
+      "network":"Smart",
       "prefix":[
          "0813",
          "0907",
@@ -40,7 +40,7 @@
       ]
    },
    {
-      "network":"Globe / Touch Mobile",
+      "network":"Globe",
       "prefix":[
          "0905",
          "0906",

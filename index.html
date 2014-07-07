@@ -2,19 +2,32 @@
 <html ng-app="mainDirective">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap core CSS -->
+		<link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/flat-ui.css" rel="stylesheet">
+
 		<script type="text/javascript" src="js/angular/angular.min.js"></script>
 		<script type="text/javascript" src="js/directives/app.js"></script>
 		<title>PH Mobile Prefix Search</title>
 	</head>
 	<body>
-		<div ng-controller="SearchController as search">
-				<input type="search" ng-model="search.main" placeholder="search">
-		
-			<ul>
-				<li ng-repeat="pref in search.mains | filter: search.main" ng-show="search.main">
-					{{pref.network}}
-				</li>
-			</ul>
+	
+		<div class="container-fluid">
+				<h3>PH Mobile Prefixer</h3>
+
+			<div  class=" form-search col-xs-12 col-sm-6 col-md-5 col-lg-1" ng-controller="SearchController as search">
+				<div class="form-group">
+					<input type="number" class="form-control input-lg" ng-model="search.main" placeholder="09XX">
+
+					<h4 class="it-is">It is a <span class="result-col" ng-repeat="pref in search.mains | filter: search.main" ng-show="search.main"> {{pref.network}} </span> number.</h4>
+				</div>
+			</div>
 		</div>
+		<footer>
+			<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+		</footer>
 	</body>
 </html>
