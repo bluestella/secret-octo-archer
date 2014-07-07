@@ -17,18 +17,22 @@
 
 		<div class="container-fluid">
 			<h3>Anong Network?</h3>
-			<p>A mobile number prefix in the Philippines mobile network checker.</p>
+			<p>
+				A mobile number prefix in the Philippines mobile network checker.
+			</p>
 			<div  class=" form-search col-xs-12 col-sm-6 col-md-5 col-lg-1" ng-controller="SearchController as search">
-			
+
 				<div class="form-group">
 					<input type="number" class="form-control input-lg" ng-model="search.main" placeholder="09XX">
 
 					<h4 class="it-is" ng-hide="!search.main"><span class="result-col" ng-repeat="pref in search.mains | filter: search.main" ng-show="search.main"> {{pref.network}} </span> yan!</h4>
 				</div>
 			</div>
-				
 		</div>
 		<footer>
+					
+<p>brought to you by: <a href="http://sepharoo.com/">bluestella</a></p>
+
 			<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
 		</footer>
 	</body>

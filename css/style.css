@@ -34,3 +34,10 @@ body {
 .container-fluid{
 	margin-top: -70px !important;
 }
+footer{
+	padding-left: 20px !important;
+	padding-top: 40px !important;
+	background-color: transparent !important;
+	width: 250px;
+	font-size: xx-small !important;
+}
