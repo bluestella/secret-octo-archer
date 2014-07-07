@@ -31,3 +31,6 @@ body {
 .it-is{
 	color: #2c3e50;
 }
+.container-fluid{
+	margin-top: -70px !important;
+}
