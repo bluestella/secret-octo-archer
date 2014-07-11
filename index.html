@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Bootstrap core CSS -->
+		<!-- Bootstrap core CSS: http://jsfiddle.net/weSpW/3/ -->
 		<link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/flat-ui.css" rel="stylesheet">
@@ -25,8 +25,8 @@
 				<div class="form-group">
 
 					<input type="number" class="form-control input-lg" ng-model="search.main" placeholder="enter first 4 digits: 09XX">
-
-					<h4 class="it-is" ng-repeat="pref in search.mains  | filter: search.main" ng-hide="!search.main"><span class="result-col" ng-show="search.main">{{pref.network}}</span> yan!</h4>
+					{{search.main | limitTo:4}}
+						<h4 class="it-is" ng-repeat="pref in search.mains  | filter: search.main" ng-hide="!search.main"><span class="result-col" ng-show="search.main">{{pref.network}}</span> yan! <a ng-href="tel:{{search.main}}">Tawagan mo na!</a></h4>
 
 				</div>
 			</div>
@@ -49,17 +49,24 @@
 				</script>
 			</div>
 			<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
-			
+
 			<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				(function(i, s, o, g, r, a, m) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] ||
+					function() {
+						(i[r].q = i[r].q || []).push(arguments)
+					}, i[r].l = 1 * new Date();
+					a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m)
+				})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-6022188-19', 'auto');
-  ga('send', 'pageview');
+				ga('create', 'UA-6022188-19', 'auto');
+				ga('send', 'pageview');
 
-</script>
+			</script>
 		</footer>
 	</body>
 
