@@ -1,7 +1,7 @@
-Project "secret-octo-archer"
+Project UST IICS Professor Attendance System
 ==================
-It is a test bed project for [@bluestella] (https://github.com/bluestella/) who's working on a bigger project which involves search.
-
-Anyhow...
-====
-**secret-octo-archer** does search for mobile phone prefixes in the Philippines (PHI).
+Final Academic Project of the following:
+Jenica Mondejar
+Acy Austria
+Ella Salvador
+Pia Reyes
